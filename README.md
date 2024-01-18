@@ -1,6 +1,6 @@
 # eslint-plugin-ab-fsd
 
-plugin for react app
+Plugin for react app with Feature-Sliced Design
 
 ## Installation
 
