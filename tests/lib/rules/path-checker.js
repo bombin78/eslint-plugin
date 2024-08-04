@@ -16,22 +16,22 @@ const aliasOptions = [
 ruleTester.run("path-checker", rule, {
   valid: [
     {
-      filename: '/home/bombin/dev/react18-app/src/entities/Article',
+      filename: '/home/user/dev/react18-app/src/entities/Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice'",
       errors: [],
     },
   ],
   invalid: [
     {
-      filename: '/home/bombin/dev/react18-app/src/entities/Article',
+      filename: '/home/user/dev/react18-app/src/entities/Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from '@/entities/Article/model/slices/addCommentFormSlice'",
-      errors: [{ message: "В рамках одного слайса все пути должны быть относительными"}],
+      errors: [{ message: "Within the same slice, all paths must be relative"}],
       options: aliasOptions,
     },
     {
-      filename: '/home/bombin/dev/react18-app/src/entities/Article',
+      filename: '/home/user/dev/react18-app/src/entities/Article',
       code: "import { addCommentFormActions, addCommentFormReducer } from 'entities/Article/model/slices/addCommentFormSlice'",
-      errors: [{ message: "В рамках одного слайса все пути должны быть относительными"}],
+      errors: [{ message: "Within the same slice, all paths must be relative"}],
     },
   ],
 });
