@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ab-fsd",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "plugin for react app with Feature-Sliced Design",
   "keywords": [
     "eslint",
